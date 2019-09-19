@@ -1,7 +1,6 @@
 ## Oswa - inv
 
 
-![OSWA-INV v2 image](https://scontent-iad3-1.xx.fbcdn.net/v/t31.0-8/12045296_896994067005023_5505146103193104549_o.jpg?oh=4afd029c1486604d29f672d76becb8bc&oe=5921F70A " Warehouse inventory system ")
 #Warehouse inventory system
 - - - -
 
@@ -13,6 +12,10 @@ OSWA-INV is a web based Inventory System, that will allow you to keep tracking o
 ****
 
 If you find any bug, and a fix for that bug, please leave a comment on the github page for this project and i will push the change into the master branch.
+
+***
+It is a fast and light weight stock management software. Unfortunately Siamon didn't update for couple of years. To make more people able to use this, I added i18n (Multi-languages) to this project. You can download the POEdit or anyother .po editor to modify the language pack from locale folder.
+***
 
 
 ### Installing this application is fairly easy, just follow these steps:
