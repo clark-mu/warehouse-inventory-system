@@ -1,5 +1,5 @@
 <?php
-  $page_title = 'All Product';
+  $page_title = _('All Product');
   require_once('includes/load.php');
   // Checkin What level user has permission to view this page
    page_require_level(2);
@@ -14,7 +14,7 @@
       <div class="panel panel-default">
         <div class="panel-heading clearfix">
          <div class="pull-right">
-           <a href="add_product.php" class="btn btn-primary">Add New</a>
+           <a href="add_product.php" class="btn btn-primary"><?php echo _('Add New');?></a>
          </div>
         </div>
         <div class="panel-body">
@@ -22,14 +22,14 @@
             <thead>
               <tr>
                 <th class="text-center" style="width: 50px;">#</th>
-                <th> Photo</th>
-                <th> Product Title </th>
-                <th class="text-center" style="width: 10%;"> Categorie </th>
-                <th class="text-center" style="width: 10%;"> Instock </th>
-                <th class="text-center" style="width: 10%;"> Buying Price </th>
-                <th class="text-center" style="width: 10%;"> Saleing Price </th>
-                <th class="text-center" style="width: 10%;"> Product Added </th>
-                <th class="text-center" style="width: 100px;"> Actions </th>
+                <th> <?php echo _('Photo');?></th>
+                <th> <?php echo _('Product Title');?> </th>
+                <th class="text-center" style="width: 10%;"> <?php echo _('Categorie');?> </th>
+                <th class="text-center" style="width: 10%;"> <?php echo _('Instock');?> </th>
+                <th class="text-center" style="width: 10%;"> <?php echo _('Buying Price');?> </th>
+                <th class="text-center" style="width: 10%;"> <?php echo _('Saleing Price');?> </th>
+                <th class="text-center" style="width: 10%;"> <?php echo _('Product Added');?> </th>
+                <th class="text-center" style="width: 100px;"> <?php echo _('Actions');?> </th>
               </tr>
             </thead>
             <tbody>
@@ -51,10 +51,10 @@
                 <td class="text-center"> <?php echo read_date($product['date']); ?></td>
                 <td class="text-center">
                   <div class="btn-group">
-                    <a href="edit_product.php?id=<?php echo (int)$product['id'];?>" class="btn btn-info btn-xs"  title="Edit" data-toggle="tooltip">
+                    <a href="edit_product.php?id=<?php echo (int)$product['id'];?>" class="btn btn-info btn-xs"  title="<?php echo _('Edit');?>" data-toggle="tooltip">
                       <span class="glyphicon glyphicon-edit"></span>
                     </a>
-                    <a href="delete_product.php?id=<?php echo (int)$product['id'];?>" class="btn btn-danger btn-xs"  title="Delete" data-toggle="tooltip">
+                    <a href="delete_product.php?id=<?php echo (int)$product['id'];?>" class="btn btn-danger btn-xs"  title="<?php echo _('Delete');?>" data-toggle="tooltip">
                       <span class="glyphicon glyphicon-trash"></span>
                     </a>
                   </div>

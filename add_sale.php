@@ -1,5 +1,5 @@
 <?php
-  $page_title = 'Add Sale';
+  $page_title = _('Add Sale');
   require_once('includes/load.php');
   // Checkin What level user has permission to view this page
    page_require_level(3);
@@ -45,9 +45,9 @@
         <div class="form-group">
           <div class="input-group">
             <span class="input-group-btn">
-              <button type="submit" class="btn btn-primary">Find It</button>
+              <button type="submit" class="btn btn-primary"><?php echo _('Find It');?></button>
             </span>
-            <input type="text" id="sug_input" class="form-control" name="title"  placeholder="Search for product name">
+            <input type="text" id="sug_input" class="form-control" name="title"  placeholder="<?php echo _('Search for product name');?>">
          </div>
          <div id="result" class="list-group"></div>
         </div>
@@ -61,19 +61,19 @@
       <div class="panel-heading clearfix">
         <strong>
           <span class="glyphicon glyphicon-th"></span>
-          <span>Sale Eidt</span>
+          <span><?php echo _('Sale Eidt');?></span>
        </strong>
       </div>
       <div class="panel-body">
         <form method="post" action="add_sale.php">
          <table class="table table-bordered">
            <thead>
-            <th> Item </th>
-            <th> Price </th>
-            <th> Qty </th>
-            <th> Total </th>
-            <th> Date</th>
-            <th> Action</th>
+            <th> <?php echo _('Item');?> </th>
+            <th> <?php echo _('Price');?> </th>
+            <th> <?php echo _('Qty');?> </th>
+            <th> <?php echo _('Total');?> </th>
+            <th> <?php echo _('Date');?></th>
+            <th> <?php echo _('Action');?></th>
            </thead>
              <tbody  id="product_info"> </tbody>
          </table>

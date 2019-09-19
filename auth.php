@@ -12,11 +12,11 @@ if(empty($errors)){
      $session->login($user_id);
     //Update Sign in time
      updateLastLogIn($user_id);
-     $session->msg("s", "Welcome to OSWA-INV.");
+     $session->msg("s", _("Welcome to OSWA-INV."));
      redirect('home.php',false);
 
   } else {
-    $session->msg("d", "Sorry Username/Password incorrect.");
+    $session->msg("d", _("Sorry Username/Password incorrect."));
     redirect('index.php',false);
   }
 

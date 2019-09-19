@@ -1,5 +1,5 @@
 <?php
-  $page_title = 'Edit Group';
+  $page_title = _('Edit Group');
   require_once('includes/load.php');
   // Checkin What level user has permission to view this page
    page_require_level(1);
@@ -43,27 +43,27 @@
 <?php include_once('layouts/header.php'); ?>
 <div class="login-page">
     <div class="text-center">
-       <h3>Edit Group</h3>
+       <h3><?php echo _('Edit Group');?></h3>
      </div>
      <?php echo display_msg($msg); ?>
       <form method="post" action="edit_group.php?id=<?php echo (int)$e_group['id'];?>" class="clearfix">
         <div class="form-group">
-              <label for="name" class="control-label">Group Name</label>
+              <label for="name" class="control-label"><?php echo _('Group Name');?></label>
               <input type="name" class="form-control" name="group-name" value="<?php echo remove_junk(ucwords($e_group['group_name'])); ?>">
         </div>
         <div class="form-group">
-              <label for="level" class="control-label">Group Level</label>
+              <label for="level" class="control-label"><?php echo _('Group Level');?></label>
               <input type="number" class="form-control" name="group-level" value="<?php echo (int)$e_group['group_level']; ?>">
         </div>
         <div class="form-group">
-          <label for="status">Status</label>
+          <label for="status"><?php echo _('Status');?></label>
               <select class="form-control" name="status">
-                <option <?php if($e_group['group_status'] === '1') echo 'selected="selected"';?> value="1"> Active </option>
-                <option <?php if($e_group['group_status'] === '0') echo 'selected="selected"';?> value="0">Deactive</option>
+                <option <?php if($e_group['group_status'] === '1') echo 'selected="selected"';?> value="1"> <?php echo _('Active');?> </option>
+                <option <?php if($e_group['group_status'] === '0') echo 'selected="selected"';?> value="0"><?php echo _('Deactive');?></option>
               </select>
         </div>
         <div class="form-group clearfix">
-                <button type="submit" name="update" class="btn btn-info">Update</button>
+                <button type="submit" name="update" class="btn btn-info"><?php echo _('Update');?></button>
         </div>
     </form>
 </div>

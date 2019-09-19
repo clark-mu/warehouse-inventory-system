@@ -1,5 +1,5 @@
 <?php
-  $page_title = 'Add User';
+  $page_title = _('Add User');
   require_once('includes/load.php');
   // Checkin What level user has permission to view this page
   page_require_level(1);
@@ -44,26 +44,26 @@
       <div class="panel-heading">
         <strong>
           <span class="glyphicon glyphicon-th"></span>
-          <span>Add New User</span>
+          <span><?php echo _('Add New User');?></span>
        </strong>
       </div>
       <div class="panel-body">
         <div class="col-md-6">
           <form method="post" action="add_user.php">
             <div class="form-group">
-                <label for="name">Name</label>
+                <label for="name"><?php echo _('Name');?></label>
                 <input type="text" class="form-control" name="full-name" placeholder="Full Name">
             </div>
             <div class="form-group">
-                <label for="username">Username</label>
+                <label for="username"><?php echo _('Username');?></label>
                 <input type="text" class="form-control" name="username" placeholder="Username">
             </div>
             <div class="form-group">
-                <label for="password">Password</label>
+                <label for="password"><?php echo _('Password');?></label>
                 <input type="password" class="form-control" name ="password"  placeholder="Password">
             </div>
             <div class="form-group">
-              <label for="level">User Role</label>
+              <label for="level"><?php echo _('User Role');?></label>
                 <select class="form-control" name="level">
                   <?php foreach ($groups as $group ):?>
                    <option value="<?php echo $group['group_level'];?>"><?php echo ucwords($group['group_name']);?></option>
@@ -71,7 +71,7 @@
                 </select>
             </div>
             <div class="form-group clearfix">
-              <button type="submit" name="add_user" class="btn btn-primary">Add User</button>
+              <button type="submit" name="add_user" class="btn btn-primary"><?php echo _('Add User');?></button>
             </div>
         </form>
         </div>

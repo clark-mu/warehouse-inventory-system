@@ -1,5 +1,5 @@
 <?php
-  $page_title = 'Edit Account';
+  $page_title = _('Edit Account');
   require_once('includes/load.php');
    page_require_level(3);
 ?>
@@ -52,7 +52,7 @@
         <div class="panel-heading">
           <div class="panel-heading clearfix">
             <span class="glyphicon glyphicon-camera"></span>
-            <span>Change My photo</span>
+            <span><?php echo _('Change My photo');?></span>
           </div>
         </div>
         <div class="panel-body">
@@ -67,7 +67,7 @@
               </div>
               <div class="form-group">
                 <input type="hidden" name="user_id" value="<?php echo $user['id'];?>">
-                 <button type="submit" name="submit" class="btn btn-warning">Change</button>
+                 <button type="submit" name="submit" class="btn btn-warning"><?php echo _('Change');?></button>
               </div>
              </form>
             </div>
@@ -79,21 +79,21 @@
     <div class="panel panel-default">
       <div class="panel-heading clearfix">
         <span class="glyphicon glyphicon-edit"></span>
-        <span>Edit My Account</span>
+        <span><?php echo _('Edit My Account');?></span>
       </div>
       <div class="panel-body">
           <form method="post" action="edit_account.php?id=<?php echo (int)$user['id'];?>" class="clearfix">
             <div class="form-group">
-                  <label for="name" class="control-label">Name</label>
+                  <label for="name" class="control-label"><?php echo _('Name');?></label>
                   <input type="name" class="form-control" name="name" value="<?php echo remove_junk(ucwords($user['name'])); ?>">
             </div>
             <div class="form-group">
-                  <label for="username" class="control-label">Username</label>
+                  <label for="username" class="control-label"><?php echo _('Username');?></label>
                   <input type="text" class="form-control" name="username" value="<?php echo remove_junk(ucwords($user['username'])); ?>">
             </div>
             <div class="form-group clearfix">
-                    <a href="change_password.php" title="change password" class="btn btn-danger pull-right">Change Password</a>
-                    <button type="submit" name="update" class="btn btn-info">Update</button>
+                    <a href="change_password.php" title="change password" class="btn btn-danger pull-right"><?php echo _('Change Password');?></a>
+                    <button type="submit" name="update" class="btn btn-info"><?php echo _('Update');?></button>
             </div>
         </form>
       </div>

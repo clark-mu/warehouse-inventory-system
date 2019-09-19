@@ -1,5 +1,5 @@
 <?php
-  $page_title = 'Edit User';
+  $page_title = _('Edit User');
   require_once('includes/load.php');
   // Checkin What level user has permission to view this page
    page_require_level(1);
@@ -72,21 +72,21 @@ if(isset($_POST['update-pass'])) {
        <div class="panel-heading">
         <strong>
           <span class="glyphicon glyphicon-th"></span>
-          Update <?php echo remove_junk(ucwords($e_user['name'])); ?> Account
+          <?php echo _('Update');?> <?php echo remove_junk(ucwords($e_user['name'])); ?> <?php echo _('Account');?>
         </strong>
        </div>
        <div class="panel-body">
           <form method="post" action="edit_user.php?id=<?php echo (int)$e_user['id'];?>" class="clearfix">
             <div class="form-group">
-                  <label for="name" class="control-label">Name</label>
+                  <label for="name" class="control-label"><?php echo _('Name');?></label>
                   <input type="name" class="form-control" name="name" value="<?php echo remove_junk(ucwords($e_user['name'])); ?>">
             </div>
             <div class="form-group">
-                  <label for="username" class="control-label">Username</label>
+                  <label for="username" class="control-label"><?php echo _('Username');?></label>
                   <input type="text" class="form-control" name="username" value="<?php echo remove_junk(ucwords($e_user['username'])); ?>">
             </div>
             <div class="form-group">
-              <label for="level">User Role</label>
+              <label for="level"><?php echo _('User Role');?></label>
                 <select class="form-control" name="level">
                   <?php foreach ($groups as $group ):?>
                    <option <?php if($group['group_level'] === $e_user['user_level']) echo 'selected="selected"';?> value="<?php echo $group['group_level'];?>"><?php echo ucwords($group['group_name']);?></option>
@@ -94,14 +94,14 @@ if(isset($_POST['update-pass'])) {
                 </select>
             </div>
             <div class="form-group">
-              <label for="status">Status</label>
+              <label for="status"><?php echo _('Status');?></label>
                 <select class="form-control" name="status">
-                  <option <?php if($e_user['status'] === '1') echo 'selected="selected"';?>value="1">Active</option>
-                  <option <?php if($e_user['status'] === '0') echo 'selected="selected"';?> value="0">Deactive</option>
+                  <option <?php if($e_user['status'] === '1') echo 'selected="selected"';?>value="1"><?php echo _('Active');?></option>
+                  <option <?php if($e_user['status'] === '0') echo 'selected="selected"';?> value="0"><?php echo _('Deactive');?></option>
                 </select>
             </div>
             <div class="form-group clearfix">
-                    <button type="submit" name="update" class="btn btn-info">Update</button>
+                    <button type="submit" name="update" class="btn btn-info"><?php echo _('Update');?></button>
             </div>
         </form>
        </div>
@@ -113,17 +113,17 @@ if(isset($_POST['update-pass'])) {
       <div class="panel-heading">
         <strong>
           <span class="glyphicon glyphicon-th"></span>
-          Change <?php echo remove_junk(ucwords($e_user['name'])); ?> password
+          <?php echo _('Change');?> <?php echo remove_junk(ucwords($e_user['name'])); ?> <?php echo _('password');?>
         </strong>
       </div>
       <div class="panel-body">
         <form action="edit_user.php?id=<?php echo (int)$e_user['id'];?>" method="post" class="clearfix">
           <div class="form-group">
-                <label for="password" class="control-label">Password</label>
+                <label for="password" class="control-label"><?php echo _('Password');?></label>
                 <input type="password" class="form-control" name="password" placeholder="Type user new password">
           </div>
           <div class="form-group clearfix">
-                  <button type="submit" name="update-pass" class="btn btn-danger pull-right">Change</button>
+                  <button type="submit" name="update-pass" class="btn btn-danger pull-right"><?php echo _('Change');?></button>
           </div>
         </form>
       </div>

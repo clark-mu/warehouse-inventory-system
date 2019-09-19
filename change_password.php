@@ -1,5 +1,5 @@
 <?php
-  $page_title = 'Change Password';
+  $page_title = _('Change Password');
   require_once('includes/load.php');
   // Checkin What level user has permission to view this page
   page_require_level(3);
@@ -39,21 +39,21 @@
 <?php include_once('layouts/header.php'); ?>
 <div class="login-page">
     <div class="text-center">
-       <h3>Change your password</h3>
+       <h3><?php echo _('Change your password');?></h3>
      </div>
      <?php echo display_msg($msg); ?>
       <form method="post" action="change_password.php" class="clearfix">
         <div class="form-group">
-              <label for="newPassword" class="control-label">New password</label>
+              <label for="newPassword" class="control-label"><?php echo _('New password');?></label>
               <input type="password" class="form-control" name="new-password" placeholder="New password">
         </div>
         <div class="form-group">
-              <label for="oldPassword" class="control-label">Old password</label>
+              <label for="oldPassword" class="control-label"><?php echo _('Old password');?></label>
               <input type="password" class="form-control" name="old-password" placeholder="Old password">
         </div>
         <div class="form-group clearfix">
                <input type="hidden" name="id" value="<?php echo (int)$user['id'];?>">
-                <button type="submit" name="update" class="btn btn-info">Change</button>
+                <button type="submit" name="update" class="btn btn-info"><?php echo _('Change');?></button>
         </div>
     </form>
 </div>

@@ -18,7 +18,7 @@
       } else {
 
         $html .= '<li onClick=\"fill(\''.addslashes().'\')\" class=\"list-group-item\">';
-        $html .= 'Not found';
+        $html .= _('Not found');
         $html .= "</li>";
 
       }
@@ -51,13 +51,13 @@
           $html  .= "<input type=\"date\" class=\"form-control datePicker\" name=\"date\" data-date data-date-format=\"yyyy-mm-dd\">";
           $html  .= "</td>";
           $html  .= "<td>";
-          $html  .= "<button type=\"submit\" name=\"add_sale\" class=\"btn btn-primary\">Add sale</button>";
+          $html  .= "<button type=\"submit\" name=\"add_sale\" class=\"btn btn-primary\">"._("Add sale")."</button>";
           $html  .= "</td>";
           $html  .= "</tr>";
 
         }
     } else {
-        $html ='<tr><td>product name not resgister in database</td></tr>';
+        $html ='<tr><td>'._('product name not resgister in database').'</td></tr>';
     }
 
     echo json_encode($html);

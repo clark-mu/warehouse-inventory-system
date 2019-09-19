@@ -1,5 +1,5 @@
 <?php
-$page_title = 'Sales Report';
+$page_title = _("Sales Report");
 $results = '';
   require_once('includes/load.php');
   // Checkin What level user has permission to view this page
@@ -28,7 +28,7 @@ $results = '';
 <html lang="en-US">
  <head>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-   <title>Default Page Title</title>
+   <title><?php echo _("Sales Report");?></title>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
    <style>
    @media print {
@@ -79,18 +79,18 @@ $results = '';
   <?php if($results): ?>
     <div class="page-break">
        <div class="sale-head pull-right">
-           <h1>Sales Report</h1>
+           <h1><?php echo _("Sales Report");?></h1>
            <strong><?php if(isset($start_date)){ echo $start_date;}?> To <?php if(isset($end_date)){echo $end_date;}?> </strong>
        </div>
       <table class="table table-border">
         <thead>
           <tr>
-              <th>Date</th>
-              <th>Product Title</th>
-              <th>Buying Price</th>
-              <th>Selling Price</th>
-              <th>Total Qty</th>
-              <th>TOTAL</th>
+              <th><?php echo _("Date");?></th>
+              <th><?php echo _("Product Title");?></th>
+              <th><?php echo _("Buying Price");?></th>
+              <th><?php echo _("Selling Price");?></th>
+              <th><?php echo _("Total Qty");?></th>
+              <th><?php echo _("TOTAL");?></th>
           </tr>
         </thead>
         <tbody>
@@ -110,14 +110,14 @@ $results = '';
         <tfoot>
          <tr class="text-right">
            <td colspan="4"></td>
-           <td colspan="1">Grand Total</td>
+           <td colspan="1"><?php echo _("Grand Total");?></td>
            <td> $
            <?php echo number_format(total_price($results)[0], 2);?>
           </td>
          </tr>
          <tr class="text-right">
            <td colspan="4"></td>
-           <td colspan="1">Profit</td>
+           <td colspan="1"><?php echo _("Profit");?></td>
            <td> $<?php echo number_format(total_price($results)[1], 2);?></td>
          </tr>
         </tfoot>
@@ -125,7 +125,7 @@ $results = '';
     </div>
   <?php
     else:
-        $session->msg("d", "Sorry no sales has been found. ");
+        $session->msg("d", _("Sorry no sales has been found. "));
         redirect('sales_report.php', false);
      endif;
   ?>

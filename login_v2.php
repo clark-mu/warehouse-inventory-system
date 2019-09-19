@@ -6,21 +6,21 @@
 
 <div class="login-page">
     <div class="text-center">
-       <h1>Welcome</h1>
-       <p>Sign in to start your session</p>
+       <h1><?php echo _('Welcome');?></h1>
+       <p><?php echo _('Sign in to start your session');?></p>
      </div>
      <?php echo display_msg($msg); ?>
       <form method="post" action="auth_v2.php" class="clearfix">
         <div class="form-group">
-              <label for="username" class="control-label">Username</label>
+              <label for="username" class="control-label"><?php echo _('Username');?></label>
               <input type="name" class="form-control" name="username" placeholder="Username">
         </div>
         <div class="form-group">
-            <label for="Password" class="control-label">Password</label>
+            <label for="Password" class="control-label"><?php echo _('Password');?></label>
             <input type="password" name= "password" class="form-control" placeholder="password">
         </div>
         <div class="form-group">
-                <button type="submit" class="btn btn-info  pull-right">Login</button>
+                <button type="submit" class="btn btn-info  pull-right"><?php echo _('Login');?></button>
         </div>
     </form>
 </div>
