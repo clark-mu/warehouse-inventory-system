@@ -1,0 +1,759 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: stock\n"
+"POT-Creation-Date: 2019-09-20 12:52+0800\n"
+"PO-Revision-Date: 2019-09-20 12:54+0800\n"
+"Last-Translator: \n"
+"Language-Team: SANWEI\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: add_group.php:2
+msgid "Add Group"
+msgstr ""
+
+#: add_group.php:48
+msgid "Add new user Group"
+msgstr ""
+
+#: add_group.php:53 edit_group.php:51 group.php:29
+msgid "Group Name"
+msgstr ""
+
+#: add_group.php:57 edit_group.php:55 group.php:30
+msgid "Group Level"
+msgstr ""
+
+#: add_group.php:61 edit_group.php:59 edit_user.php:97 group.php:31
+#: users.php:35
+msgid "Status"
+msgstr ""
+
+#: add_group.php:63 edit_group.php:61 edit_user.php:99 group.php:45
+#: users.php:49
+msgid "Active"
+msgstr ""
+
+#: add_group.php:64 edit_group.php:62 edit_user.php:100 group.php:47
+#: users.php:51
+msgid "Deactive"
+msgstr ""
+
+#: add_group.php:68 edit_account.php:96 edit_group.php:66 edit_product.php:140
+#: edit_user.php:75 edit_user.php:104
+msgid "Update"
+msgstr ""
+
+#: add_product.php:2
+msgid "Add Product"
+msgstr ""
+
+#: add_product.php:32
+msgid "Product added "
+msgstr ""
+
+#: add_product.php:35
+msgid " Sorry failed to added!"
+msgstr ""
+
+#: add_product.php:59 edit_product.php:64
+msgid "Add New Product"
+msgstr ""
+
+#: add_product.php:70 product.php:26 sale_report_process.php:89
+msgid "Product Title"
+msgstr ""
+
+#: add_product.php:77
+msgid "Select Product Category"
+msgstr ""
+
+#: add_product.php:86
+msgid "Select Product Photo"
+msgstr ""
+
+#: add_product.php:103
+msgid "Product Quantity"
+msgstr ""
+
+#: add_product.php:111 product.php:29 sale_report_process.php:90
+msgid "Buying Price"
+msgstr ""
+
+#: add_product.php:120 sale_report_process.php:91
+msgid "Selling Price"
+msgstr ""
+
+#: add_product.php:126 layouts/admin_menu.php:31 layouts/special_menu.php:21
+msgid "Add product"
+msgstr ""
+
+#: add_sale.php:2 layouts/admin_menu.php:47 layouts/user_menu.php:15
+msgid "Add Sale"
+msgstr ""
+
+#: add_sale.php:27
+msgid "Sale added. "
+msgstr ""
+
+#: add_sale.php:30
+msgid " Sorry failed to add!"
+msgstr ""
+
+#: add_sale.php:48
+msgid "Find It"
+msgstr ""
+
+#: add_sale.php:50
+msgid "Search for product name"
+msgstr ""
+
+#: add_sale.php:64
+msgid "Sale Eidt"
+msgstr ""
+
+#: add_sale.php:71
+msgid "Item"
+msgstr ""
+
+#: add_sale.php:72 edit_sale.php:70
+msgid "Price"
+msgstr ""
+
+#: add_sale.php:73 edit_sale.php:69
+msgid "Qty"
+msgstr ""
+
+#: add_sale.php:74 daily_sales.php:35 edit_sale.php:71 monthly_sales.php:33
+#: sales.php:35
+msgid "Total"
+msgstr ""
+
+#: add_sale.php:75 admin.php:123 daily_sales.php:36 edit_sale.php:72
+#: monthly_sales.php:34 sale_report_process.php:88 sales.php:36
+msgid "Date"
+msgstr "Date"
+
+#: add_sale.php:76 edit_sale.php:73
+msgid "Action"
+msgstr ""
+
+#: add_user.php:2 add_user.php:74
+msgid "Add User"
+msgstr ""
+
+#: add_user.php:27
+msgid "User account has been creted! "
+msgstr ""
+
+#: add_user.php:31
+msgid " Sorry failed to create account!"
+msgstr ""
+
+#: add_user.php:47 users.php:25
+msgid "Add New User"
+msgstr ""
+
+#: add_user.php:54 edit_account.php:87 edit_user.php:81 users.php:32
+msgid "Name"
+msgstr ""
+
+#: add_user.php:55
+msgid "Full Name"
+msgstr ""
+
+#: add_user.php:58 add_user.php:59 edit_account.php:91 edit_user.php:85
+#: index.php:15 index.php:16 login_v2.php:15 login_v2.php:16 users.php:33
+msgid "Username"
+msgstr ""
+
+#: add_user.php:62 add_user.php:63 edit_user.php:122 index.php:19
+#: login_v2.php:19
+msgid "Password"
+msgstr ""
+
+#: add_user.php:66 edit_user.php:89 users.php:34
+msgid "User Role"
+msgstr ""
+
+#: admin.php:2
+msgid "Admin Home Page"
+msgstr ""
+
+#: admin.php:31 users.php:23
+msgid "Users"
+msgstr "Users"
+
+#: admin.php:42 categorie.php:69 layouts/admin_menu.php:21
+msgid "Categories"
+msgstr ""
+
+#: admin.php:53 layouts/admin_menu.php:27
+msgid "Products"
+msgstr "Products"
+
+#: admin.php:64 layouts/admin_menu.php:43 layouts/user_menu.php:11
+msgid "Sales"
+msgstr "Sales"
+
+#: admin.php:73
+msgid "Thank You! for your support and love."
+msgstr "Thank You! for your support and love."
+
+#: admin.php:84
+msgid "Highest Saleing Products"
+msgstr "Highest Saleing Products"
+
+#: admin.php:91
+msgid "Title"
+msgstr "Title"
+
+#: admin.php:92
+msgid "Total Sold"
+msgstr "Total Sold"
+
+#: admin.php:93
+msgid "Total Quantity"
+msgstr "Total Quantity"
+
+#: admin.php:114
+msgid "LATEST SALES"
+msgstr "LATEST SALES"
+
+#: admin.php:122
+msgid "Product Name"
+msgstr "Product Name"
+
+#: admin.php:124
+msgid "Total Sale"
+msgstr "Total Sale"
+
+#: admin.php:151
+msgid "Recently Added Products"
+msgstr "Recently Added Products"
+
+#: ajax.php:21
+msgid "Not found"
+msgstr ""
+
+#: ajax.php:54 sales.php:25
+msgid "Add sale"
+msgstr ""
+
+#: ajax.php:60
+msgid "product name not resgister in database"
+msgstr ""
+
+#: auth.php:15
+msgid "Welcome to OSWA-INV."
+msgstr ""
+
+#: auth.php:19
+msgid "Sorry Username/Password incorrect."
+msgstr ""
+
+#: categorie.php:2
+msgid "All categories"
+msgstr ""
+
+#: categorie.php:18
+msgid "Successfully Added Categorie"
+msgstr ""
+
+#: categorie.php:21
+msgid "Sorry Failed to insert."
+msgstr ""
+
+#: categorie.php:43
+msgid "Add New Categorie"
+msgstr ""
+
+#: categorie.php:49
+msgid "Categorie Name"
+msgstr ""
+
+#: categorie.php:51
+msgid "Add categorie"
+msgstr ""
+
+#: categorie.php:61
+msgid "All Categories"
+msgstr ""
+
+#: categorie.php:70 group.php:32 media.php:56 product.php:32 sales.php:37
+#: users.php:37
+msgid "Actions"
+msgstr ""
+
+#: categorie.php:80 group.php:52 product.php:54 users.php:57
+msgid "Edit"
+msgstr ""
+
+#: categorie.php:83 group.php:55 users.php:60
+msgid "Remove"
+msgstr ""
+
+#: change_password.php:2 edit_account.php:95
+msgid "Change Password"
+msgstr ""
+
+#: change_password.php:17
+msgid "Your old password not match"
+msgstr ""
+
+#: change_password.php:27
+msgid "Login with your new password."
+msgstr ""
+
+#: change_password.php:30 edit_account.php:36 edit_product.php:41
+msgid " Sorry failed to updated!"
+msgstr ""
+
+#: change_password.php:42
+msgid "Change your password"
+msgstr ""
+
+#: change_password.php:47 change_password.php:48
+msgid "New password"
+msgstr ""
+
+#: change_password.php:51 change_password.php:52
+msgid "Old password"
+msgstr ""
+
+#: change_password.php:56 edit_account.php:70 edit_user.php:116
+#: edit_user.php:126
+msgid "Change"
+msgstr ""
+
+#: daily_sales.php:2 daily_sales.php:25
+msgid "Daily Sales"
+msgstr ""
+
+#: daily_sales.php:33 monthly_sales.php:31 sales.php:33
+msgid "Product name"
+msgstr ""
+
+#: daily_sales.php:34 monthly_sales.php:32
+msgid "Quantity sold"
+msgstr ""
+
+#: delete_categorie.php:9
+msgid "Missing Categorie id."
+msgstr ""
+
+#: delete_categorie.php:16
+msgid "Categorie deleted."
+msgstr ""
+
+#: delete_categorie.php:19
+msgid "Categorie deletion failed."
+msgstr ""
+
+#: delete_group.php:9
+msgid "Group has been deleted."
+msgstr ""
+
+#: delete_group.php:12
+msgid "Group deletion failed Or Missing Prm."
+msgstr ""
+
+#: delete_media.php:10
+msgid "Photo has been deleted."
+msgstr ""
+
+#: delete_media.php:13
+msgid "Photo deletion failed Or Missing Prm."
+msgstr ""
+
+#: delete_product.php:9
+msgid "Missing Product id."
+msgstr ""
+
+#: delete_product.php:16
+msgid "Products deleted."
+msgstr ""
+
+#: delete_product.php:19
+msgid "Products deletion failed."
+msgstr ""
+
+#: delete_sale.php:9
+msgid "Missing sale id."
+msgstr ""
+
+#: delete_sale.php:16
+msgid "sale deleted."
+msgstr ""
+
+#: delete_sale.php:19
+msgid "sale deletion failed."
+msgstr ""
+
+#: delete_user.php:9
+msgid "User deleted."
+msgstr ""
+
+#: delete_user.php:12
+msgid "User deletion failed Or Missing Prm."
+msgstr ""
+
+#: edit_account.php:2
+msgid "Edit Account"
+msgstr ""
+
+#: edit_account.php:13
+msgid "photo has been uploaded."
+msgstr ""
+
+#: edit_account.php:33
+msgid "Acount updated "
+msgstr ""
+
+#: edit_account.php:55
+msgid "Change My photo"
+msgstr ""
+
+#: edit_account.php:82
+msgid "Edit My Account"
+msgstr ""
+
+#: edit_categorie.php:2
+msgid "Edit categorie"
+msgstr ""
+
+#: edit_categorie.php:11
+msgid "Missing categorie id."
+msgstr ""
+
+#: edit_categorie.php:26
+msgid "Successfully updated Categorie"
+msgstr ""
+
+#: edit_categorie.php:29
+msgid "Sorry! Failed to Update"
+msgstr ""
+
+#: edit_categorie.php:49
+msgid "Editing"
+msgstr ""
+
+#: edit_categorie.php:57
+msgid "Update categorie"
+msgstr ""
+
+#: edit_group.php:2 edit_group.php:46
+msgid "Edit Group"
+msgstr ""
+
+#: edit_group.php:10
+msgid "Missing Group id."
+msgstr ""
+
+#: edit_group.php:30
+msgid "Group has been updated! "
+msgstr ""
+
+#: edit_group.php:34
+msgid " Sorry failed to updated Group!"
+msgstr ""
+
+#: edit_product.php:2
+msgid "Edit product"
+msgstr ""
+
+#: edit_product.php:12
+msgid "Missing product id."
+msgstr ""
+
+#: edit_product.php:38
+msgid "Product updated "
+msgstr ""
+
+#: edit_product.php:82
+msgid "Select a categorie"
+msgstr ""
+
+#: edit_product.php:84 edit_product.php:93
+msgid "selected"
+msgstr ""
+
+#: edit_product.php:91
+msgid "No image"
+msgstr ""
+
+#: edit_product.php:105 sales.php:34
+msgid "Quantity"
+msgstr ""
+
+#: edit_product.php:116
+msgid "Buying price"
+msgstr ""
+
+#: edit_product.php:128
+msgid "Selling price"
+msgstr ""
+
+#: edit_sale.php:2
+msgid "Edit sale"
+msgstr ""
+
+#: edit_sale.php:59 sales.php:22
+msgid "All Sales"
+msgstr ""
+
+#: edit_sale.php:62
+msgid "Show all sales"
+msgstr ""
+
+#: edit_sale.php:68
+msgid "Product title"
+msgstr ""
+
+#: edit_sale.php:95
+msgid "Update sale"
+msgstr ""
+
+#: edit_user.php:2
+msgid "Edit User"
+msgstr ""
+
+#: edit_user.php:75
+msgid "Account"
+msgstr ""
+
+#: edit_user.php:116 index.php:20 login_v2.php:20
+msgid "password"
+msgstr ""
+
+#: group.php:2
+msgid "All Group"
+msgstr ""
+
+#: group.php:20
+msgid "Groups"
+msgstr ""
+
+#: group.php:22
+msgid "Add New Group"
+msgstr ""
+
+#: home.php:2
+msgid "Home Page"
+msgstr ""
+
+#: home.php:14
+msgid "This is your new home page!"
+msgstr ""
+
+#: home.php:15
+msgid "Just browes around and find out what page you can access."
+msgstr ""
+
+#: includes/functions.php:37
+msgid " can't be blank."
+msgstr ""
+
+#: index.php:9 login_v2.php:9
+msgid "Welcome"
+msgstr ""
+
+#: index.php:10 login_v2.php:10
+msgid "Sign in to start your session"
+msgstr ""
+
+#: index.php:23 login_v2.php:23
+msgid "Login"
+msgstr ""
+
+#: layouts/admin_menu.php:5 layouts/special_menu.php:5 layouts/user_menu.php:5
+msgid "Dashboard"
+msgstr ""
+
+#: layouts/admin_menu.php:11
+msgid "User Management"
+msgstr ""
+
+#: layouts/admin_menu.php:14
+msgid "Manage Groups"
+msgstr ""
+
+#: layouts/admin_menu.php:15
+msgid "Manage Users"
+msgstr ""
+
+#: layouts/admin_menu.php:30
+msgid "Manage products"
+msgstr ""
+
+#: layouts/admin_menu.php:37 layouts/special_menu.php:27
+msgid "Media"
+msgstr ""
+
+#: layouts/admin_menu.php:46 layouts/user_menu.php:14
+msgid "Manage Sales"
+msgstr ""
+
+#: layouts/admin_menu.php:53 layouts/user_menu.php:21 sale_report_process.php:2
+#: sale_report_process.php:31 sale_report_process.php:82
+msgid "Sales Report"
+msgstr ""
+
+#: layouts/admin_menu.php:56 layouts/user_menu.php:24
+msgid "Sales by dates"
+msgstr ""
+
+#: layouts/admin_menu.php:57 layouts/user_menu.php:25
+msgid "Monthly sales"
+msgstr ""
+
+#: layouts/admin_menu.php:58 layouts/user_menu.php:26
+msgid "Daily sales"
+msgstr ""
+
+#: layouts/header.php:10
+msgid "SANWEI inventory System"
+msgstr ""
+
+#: layouts/header.php:19
+msgid "SANWEI - Inventory"
+msgstr ""
+
+#: layouts/header.php:35
+msgid "Profile"
+msgstr ""
+
+#: layouts/header.php:41
+msgid "Settings"
+msgstr ""
+
+#: layouts/header.php:47
+msgid "Logout"
+msgstr ""
+
+#: layouts/special_menu.php:11 product.php:27
+msgid "Categorie"
+msgstr ""
+
+#: layouts/special_menu.php:17
+msgid "Product"
+msgstr ""
+
+#: layouts/special_menu.php:20
+msgid "Manage product"
+msgstr ""
+
+#: media.php:2
+msgid "All Image"
+msgstr ""
+
+#: media.php:33
+msgid "All Photos"
+msgstr ""
+
+#: media.php:42
+msgid "Upload"
+msgstr ""
+
+#: media.php:53 product.php:25
+msgid "Photo"
+msgstr ""
+
+#: media.php:54
+msgid "Photo Name"
+msgstr ""
+
+#: media.php:55
+msgid "Photo Type"
+msgstr ""
+
+#: monthly_sales.php:2 monthly_sales.php:23
+msgid "Monthly Sales"
+msgstr ""
+
+#: product.php:2
+msgid "All Product"
+msgstr ""
+
+#: product.php:17
+msgid "Add New"
+msgstr ""
+
+#: product.php:28
+msgid "Instock"
+msgstr ""
+
+#: product.php:30
+msgid "Saleing Price"
+msgstr ""
+
+#: product.php:31
+msgid "Product Added"
+msgstr ""
+
+#: product.php:57
+msgid "Delete"
+msgstr ""
+
+#: profile.php:2
+msgid "My profile"
+msgstr ""
+
+#: profile.php:25
+msgid "Edit profile"
+msgstr ""
+
+#: sale_report_process.php:92
+msgid "Total Qty"
+msgstr ""
+
+#: sale_report_process.php:93
+msgid "TOTAL"
+msgstr ""
+
+#: sale_report_process.php:113
+msgid "Grand Total"
+msgstr ""
+
+#: sale_report_process.php:120
+msgid "Profit"
+msgstr ""
+
+#: sale_report_process.php:128
+msgid "Sorry no sales has been found. "
+msgstr ""
+
+#: sales_report.php:2
+msgid "Sale Report"
+msgstr ""
+
+#: sales_report.php:22
+msgid "Date Range"
+msgstr ""
+
+#: sales_report.php:24
+msgid "From"
+msgstr ""
+
+#: sales_report.php:26
+msgid "To"
+msgstr ""
+
+#: sales_report.php:30
+msgid "Generate Report"
+msgstr ""
+
+#: users.php:2
+msgid "All User"
+msgstr ""
+
+#: users.php:36
+msgid "Last Login"
+msgstr ""
