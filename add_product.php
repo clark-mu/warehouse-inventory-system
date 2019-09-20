@@ -29,10 +29,10 @@
      $query .=")";
      $query .=" ON DUPLICATE KEY UPDATE name='{$p_name}'";
      if($db->query($query)){
-       $session->msg('s',"Product added ");
+       $session->msg('s',_("Product added "));
        redirect('add_product.php', false);
      } else {
-       $session->msg('d',' Sorry failed to added!');
+       $session->msg('d',_(' Sorry failed to added!'));
        redirect('product.php', false);
      }
 

@@ -6,7 +6,7 @@
 <?php
   $d_sale = find_by_id('sales',(int)$_GET['id']);
   if(!$d_sale){
-    $session->msg("d","Missing sale id.");
+    $session->msg("d",_("Missing sale id."));
     redirect('sales.php');
   }
 ?>

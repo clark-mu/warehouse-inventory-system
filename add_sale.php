@@ -24,10 +24,10 @@
 
                 if($db->query($sql)){
                   update_product_qty($s_qty,$p_id);
-                  $session->msg('s',"Sale added. ");
+                  $session->msg('s',_("Sale added. "));
                   redirect('add_sale.php', false);
                 } else {
-                  $session->msg('d',' Sorry failed to add!');
+                  $session->msg('d',_(' Sorry failed to add!'));
                   redirect('add_sale.php', false);
                 }
         } else {

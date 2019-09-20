@@ -10,7 +10,7 @@
   $user_id = (int)$_POST['user_id'];
   $photo->upload($_FILES['file_upload']);
   if($photo->process_user($user_id)){
-    $session->msg('s','photo has been uploaded.');
+    $session->msg('s',_('photo has been uploaded.'));
     redirect('edit_account.php');
     } else{
       $session->msg('d',join($photo->errors));
@@ -30,10 +30,10 @@
             $sql = "UPDATE users SET name ='{$name}', username ='{$username}' WHERE id='{$id}'";
     $result = $db->query($sql);
           if($result && $db->affected_rows() === 1){
-            $session->msg('s',"Acount updated ");
+            $session->msg('s',_("Acount updated "));
             redirect('edit_account.php', false);
           } else {
-            $session->msg('d',' Sorry failed to updated!');
+            $session->msg('d',_(' Sorry failed to updated!'));
             redirect('edit_account.php', false);
           }
     } else {

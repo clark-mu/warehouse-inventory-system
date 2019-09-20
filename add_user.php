@@ -24,11 +24,11 @@
         $query .=")";
         if($db->query($query)){
           //sucess
-          $session->msg('s',"User account has been creted! ");
+          $session->msg('s',_("User account has been creted! "));
           redirect('add_user.php', false);
         } else {
           //failed
-          $session->msg('d',' Sorry failed to create account!');
+          $session->msg('d',_(' Sorry failed to create account!'));
           redirect('add_user.php', false);
         }
    } else {
@@ -52,15 +52,15 @@
           <form method="post" action="add_user.php">
             <div class="form-group">
                 <label for="name"><?php echo _('Name');?></label>
-                <input type="text" class="form-control" name="full-name" placeholder="Full Name">
+                <input type="text" class="form-control" name="full-name" placeholder="<?php echo _('Full Name');?>">
             </div>
             <div class="form-group">
                 <label for="username"><?php echo _('Username');?></label>
-                <input type="text" class="form-control" name="username" placeholder="Username">
+                <input type="text" class="form-control" name="username" placeholder="<?php echo _('Username');?>">
             </div>
             <div class="form-group">
                 <label for="password"><?php echo _('Password');?></label>
-                <input type="password" class="form-control" name ="password"  placeholder="Password">
+                <input type="password" class="form-control" name ="password"  placeholder="<?php echo _('Password');?>">
             </div>
             <div class="form-group">
               <label for="level"><?php echo _('User Role');?></label>

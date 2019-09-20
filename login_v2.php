@@ -13,11 +13,11 @@
       <form method="post" action="auth_v2.php" class="clearfix">
         <div class="form-group">
               <label for="username" class="control-label"><?php echo _('Username');?></label>
-              <input type="name" class="form-control" name="username" placeholder="Username">
+              <input type="name" class="form-control" name="username" placeholder="<?php echo _('Username');?>">
         </div>
         <div class="form-group">
             <label for="Password" class="control-label"><?php echo _('Password');?></label>
-            <input type="password" name= "password" class="form-control" placeholder="password">
+            <input type="password" name= "password" class="form-control" placeholder="<?php echo _('password');?>">
         </div>
         <div class="form-group">
                 <button type="submit" class="btn btn-info  pull-right"><?php echo _('Login');?></button>

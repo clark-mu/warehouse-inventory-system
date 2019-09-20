@@ -8,7 +8,7 @@
   //Display all catgories.
   $categorie = find_by_id('categories',(int)$_GET['id']);
   if(!$categorie){
-    $session->msg("d","Missing categorie id.");
+    $session->msg("d",_("Missing categorie id."));
     redirect('categorie.php');
   }
 ?>
@@ -23,10 +23,10 @@ if(isset($_POST['edit_cat'])){
        $sql .= " WHERE id='{$categorie['id']}'";
      $result = $db->query($sql);
      if($result && $db->affected_rows() === 1) {
-       $session->msg("s", "Successfully updated Categorie");
+       $session->msg("s", _("Successfully updated Categorie"));
        redirect('categorie.php',false);
      } else {
-       $session->msg("d", "Sorry! Failed to Update");
+       $session->msg("d", _("Sorry! Failed to Update"));
        redirect('categorie.php',false);
      }
   } else {
